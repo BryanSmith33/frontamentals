@@ -12,7 +12,7 @@ In all seriousness, just create a PR (pull request). I'll take a gander at it, d
 
 NOTE: This isn't even an agreement. I am just putting it out here. It takes two to agree.
 
-I follow a pretty similar approach to (CSS-Tricks legal agreement)[https://css-tricks.com/license/]. CSS-Tricks was a partial inspirer to start this blog so I want to give them a bit of credit. Their license is fantastic and how I think a lot on the web should be; open, fun and engaging.
+I follow a pretty similar approach to [CSS-Tricks legal agreement](https://css-tricks.com/license/). CSS-Tricks was a partial inspirer to start this blog so I want to give them a bit of credit. Their license is fantastic and how I think a lot on the web should be; open, fun and engaging.
 
 Frontamentals is only around for one reason: to make you a better developer. Whenever I am helping people learn I will tell them:
 
