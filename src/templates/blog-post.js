@@ -9,6 +9,7 @@ import './prism.css';
 
 const PostTitle = styled.h1`
   text-align: center;
+  font-size: 3em;
 `;
 const PostDate = styled.h4`
   font-weight: 200;
@@ -19,6 +20,9 @@ const PostTags = styled.div`
 `;
 const BackToHome = styled.div`
   margin: 15px 0;
+`;
+const StyledImage = styled(Img)`
+ margin-bottom: 26px;
 `;
 const Template = ({ data, location }) => {
   const { markdownRemark: post } = data;
@@ -43,7 +47,7 @@ const Template = ({ data, location }) => {
       <div>
         <PostTitle>{title}</PostTitle>
         <PostDate>{date}</PostDate>
-        <Img resolutions={image.childImageSharp.resolutions} alt={title}/>
+        <StyledImage className='test' sizes={image.childImageSharp.sizes} alt={title}/>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <PostTags>{postTags.join(', ')}</PostTags>
         <Social data={frontmatter} />
@@ -67,8 +71,8 @@ export const pageQuery = graphql`
         tags
         image {
           childImageSharp {
-            resolutions(width: 960){
-              ...GatsbyImageSharpResolutions
+            sizes(maxWidth: 960){
+              ...GatsbyImageSharpSizes
             }
             responsiveSizes(maxWidth: 960){
               src

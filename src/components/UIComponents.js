@@ -24,14 +24,6 @@ const Tease = styled.div`
     flex-direction: ${props => props.featured ? 'column' : 'inherit'};
   }
 `;
-const HeroImg = styled.img`
-  margin-right: 27px;
-  height: 300px;
-  @media(max-width: 1000px){
-    margin: 0 0 15px;
-    height: initial;
-  }
-`;
 const Date = styled.div`
   width: 75px;
   margin-right: 15px;
@@ -94,4 +86,4 @@ const Emoji = styled.div`
   margin: 40px 0;
 `;
 
-export { FeaturedPost, FeaturedTitle, OldTitle, Tease, HeroImg, Date, Month, Year, Details, PostTags, BTF, Excerpt, TagTitle, SearchInput, NoPosts, Emoji};
+export { FeaturedPost, FeaturedTitle, OldTitle, Tease, Date, Month, Year, Details, PostTags, BTF, Excerpt, TagTitle, SearchInput, NoPosts, Emoji};

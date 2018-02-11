@@ -2,7 +2,17 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 import Subscribe from '../components/Subscribe/Subscribe';
-import { FeaturedPost, FeaturedTitle, OldTitle, Tease, HeroImg, Date, Month, Year, Details, PostTags, BTF, Excerpt } from '../components/UIComponents';
+import Img from 'gatsby-image';
+import { FeaturedPost, FeaturedTitle, OldTitle, Tease, Date, Month, Year, Details, PostTags, BTF, Excerpt } from '../components/UIComponents';
+
+const HeroImg = styled(Img)`
+  margin-right: 27px;
+  width: 530px;
+  @media(max-width: 1000px){
+    margin: 0 0 15px;
+    width: 100%;
+  }
+`;
 
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
@@ -15,7 +25,7 @@ const IndexPage = ({ data }) => {
             <FeaturedPost key={index}>
               <Link to={frontmatter.path}>
                 <Tease featured={true}>
-                  <HeroImg src={frontmatter.image.childImageSharp.responsiveSizes.src} alt={frontmatter.title} />
+                  <HeroImg sizes={frontmatter.image.childImageSharp.sizes} alt={frontmatter.title} />
                   <div>
                     <FeaturedTitle>{frontmatter.title}</FeaturedTitle>
                     <Excerpt className='no-margin'>{post.excerpt}</Excerpt>
@@ -78,6 +88,9 @@ export const query = graphql`
             tags
             image {
               childImageSharp {
+                sizes{
+                  ...GatsbyImageSharpSizes
+                }
                 responsiveSizes{
                   src
                   srcSet
