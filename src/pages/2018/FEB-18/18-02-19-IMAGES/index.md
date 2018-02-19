@@ -166,7 +166,7 @@ You can see that the two images end up the exact same. On the second image, ever
 
 ## &lt;img> tag vs CSS background
 
-It can be difficult to know when to use an `<img>` tag and when to use the `background` CSS property. Whenever I am deciding which to use I think to myself "Is the image part of the flow of my site?" If I answer yes, I use an `<img>` tag. Remembering back to <a href='/html-intro'>Intro to HTML</a>, we want our tags to be semantic or have meaning. If we create a `div` and put an image as its background, we are saying that the image is mostly their for appearance or we like the way it looks. That is just the baseline I use and it has generally worked out pretty well for me so far but know that there any many different use cases.
+It can be difficult to know when to use an `<img>` tag and when to use the `background` CSS property. Whenever I am deciding which to use I think to myself "Is the image part of the flow of my site? Does the image provide meaning besides its good looks?" If I answer yes to either, I use an `<img>` tag. Remembering back to <a href='/html-intro'>Intro to HTML</a>, we want our tags to be semantic or have meaning. If we create a `div` and put an image as its background, we are saying that the image is mostly their for appearance or we like the way it looks. That is just the baseline I use and it has generally worked out pretty well for me so far but know that there any many different use cases.
 
 ## Optimization
 
