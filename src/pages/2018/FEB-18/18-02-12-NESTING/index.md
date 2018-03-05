@@ -70,7 +70,7 @@ It is called nesting because you are structuring your code to have a parent to c
   </div>
 ```
 
-The child divs are all nested withing the parent div. I also like to think that if you turn your head it sort of looks like a birds nest. Keep in mind there can also be a several level deep relationship and what were once children, could now be parents to their children. Just like humans.
+The child divs are all nested within the parent div. I also like to think that if you turn your head it sort of looks like a birds nest. Keep in mind there can also be a several level deep relationship and what were once children, could now be parents to their children. Just like humans.
 
 ```html
   <section class='main'>
@@ -127,4 +127,4 @@ One of the best pieces of advice I was ever given was to
 
 Eventually you will have a user that isn't using the latest version of Chrome or Firefox (Hi Grandma 👋). Oh, and they are visually impaired. And they wanted to invest 10 billion Schrute bucks into your site because they heard how cool it was but then their experience was awful. Sad story.
 
-The biggest piece of advice I can give you is to indent and nest your code as you are doing it. You just cut a huge section of code? Before you paste it somewhere else, fix up your current code. Or better yet, let your text editor or wherever you write your code do it for you. A lot of text editors have some sort of auto-formatter built in. Your co-workers will thank you. Also, keep your eyes peeled for my review on text editors!
+The biggest piece of advice I can give you is to indent and nest your code as you are doing it. You just cut a huge section of code? Before you paste it somewhere else, fix up your current code. Or better yet, let your text editor or wherever you write your code do it for you. A lot of text editors have some sort of auto-formatter built in. Your co-workers will thank you.
