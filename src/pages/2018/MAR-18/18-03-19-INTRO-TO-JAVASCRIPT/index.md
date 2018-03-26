@@ -106,7 +106,7 @@ Lastly I want to talk about how to include JavaScript into our basic projects. T
   </head>
   <body>
   
-  <scirpt>
+  <script>
     const myName = 'Bryan'
 
     function sayName(name){
@@ -114,7 +114,7 @@ Lastly I want to talk about how to include JavaScript into our basic projects. T
     }
 
     sayName(myName)
-  </scirpt>
+  </script>
   </body>
 </html
 ```
