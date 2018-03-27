@@ -21,7 +21,7 @@ There are several ways to declare functions in JavaScript. For the most part, th
 ## Function Keyword
 The function keyword is what lets us know that we will be creating a function. Up until Ecmascript 6(ES6), you needed to use the function keyword but ES6 included a new way to declare a function called an arrow function that we will talk about more later.
 
-Quick side note: You may have read Ecmascript and though of eczema or some kind of rash but it is actually the standardization of JavaScript. It basically is where JavaScript gets all its traits from. Think of it like a parent of sorts even though it is a lot more but I didn't want to leave you in the dark.
+Quick side note: You may have read Ecmascript and thought of eczema or some kind of rash but it is actually the standardization of JavaScript. It basically is where JavaScript gets all its traits from. Think of it like a parent of sorts even though it is a lot more but I didn't want to leave you in the dark.
 
 ## Function Name
 In specific type of function above, known as a declaration, the function name comes following the function keyword. We could quite literally name the function anything we wanted to. It helps to be descriptive when naming your function. A coworker should be able to read it and know exactly what it is going to do. I always tell people to lean towards having a longer function name if it means that it is descriptive but short and sweet can't be beat (thanks Dr. Seuss for the rhyme).
