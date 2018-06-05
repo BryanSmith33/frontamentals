@@ -124,6 +124,6 @@ I get this question so much it is insane. Honestly, you should learn CSS next be
 >
 > -You
 
-You are what someone else says you are. If a company hires you as a senior developer, go ahead and call yourself one. I feel like titles are only there to help keep people feeling better about themselves. We are all developers and we have one goal to make bitchin' (and accessible) websites so go out there andy make our husband/wife/partner/mom/dad/dog proud. Notice I left out cats because they cannot be pleased.
+You are what someone else says you are. If a company hires you as a senior developer, go ahead and call yourself one. I feel like titles are only there to help keep people feeling better about themselves. We are all developers and we have one goal to make bitchin' (and accessible) websites so go out there and make our husband/wife/partner/mom/dad/dog proud. Notice I left out cats because they cannot be pleased.
 
 To sum things up, you should just have the constant goal to improve and learn something everyday. If you ever have a question, hit me with it and I will give you the best feedback I possibly can. Also, sorry for the non tech post but knowing this stuff would have saved me so much embarrassment and heartache early in my career. Keep your eyes peeled for more tech topics coming in hot this next week or so!
