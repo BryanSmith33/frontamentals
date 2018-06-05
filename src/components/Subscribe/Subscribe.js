@@ -63,7 +63,7 @@ const SubscribeBox = () => {
   return (
     <Subscribe>
       <SubscribeHeader>Like What You See?</SubscribeHeader>
-      <p>Subscribe and get a weekly update of awesome delivered to your inbox every Monday!</p>
+      <p>Get an update of awesome delivered to your inbox whenever a new post goes live!</p>
       <SubscribeForm action="https://frontamentals.us17.list-manage.com/subscribe/post" method="POST">
         <FormInput type="hidden" name="u" value="a4a925b2d91aa54f026ee8f4b" />
         <FormInput type="hidden" name="id" value="392f9649f2" />
