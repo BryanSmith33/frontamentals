@@ -40,7 +40,7 @@ const Template = ({ data, location }) => {
         <meta property="og:image" content={`https://www.frontamentals.com${imageSrc}`} />
         <meta property="og:image:secure_url" content={`https://www.frontamentals.com${imageSrc}`} />
         <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content="Frontamentals. Your source for Front End Funamentals." />
+        <meta name="twitter:description" content="Frontamentals. Your source for Front End Fundamentals." />
         <meta name="twitter:image" content={`https://www.frontamentals.com${imageSrc}`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
