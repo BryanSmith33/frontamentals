@@ -1,8 +1,8 @@
 ---
 path: '/css-position'
-date: '2018-06-11'
+date: '2018-06-26'
 month: 'june'
-day: '11th'
+day: '26th'
 year: '2018'
 title: 'CSS Position Property'
 tags: ['css', 'html', 'position']
