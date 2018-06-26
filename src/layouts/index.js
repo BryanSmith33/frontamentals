@@ -7,11 +7,9 @@ import Header from '../components/Header';
 import './index.css';
 
 const Container = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 7rem 1.0875rem 4.7rem;
+  margin: 120px auto 0;
   @media(max-width: 700px){
-    padding-top: 2em;
+    margin-top: 20px;
   }
 `;
 

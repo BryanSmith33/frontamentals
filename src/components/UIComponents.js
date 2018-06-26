@@ -2,9 +2,15 @@ import styled from 'styled-components';
 
 const FeaturedPost = styled.div`
   position: fixed;
-  max-width: 919px;
+  max-width: 960px;
+  top: 110px;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
   @media(max-width: 1000px){
     position: initial;
+    max-width: initial;
   }
 `;
 const FeaturedTitle = styled.h1`
@@ -56,9 +62,11 @@ const BTF = styled.div`
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: 335px;
+  top: 355px;
   background: #fff;
-  padding-top: 20px;
+  padding: 0 1.0875rem 4.7rem;
+  max-width: 960px;
+  margin: 0 auto;
   @media(max-width: 1000px){
     flex-direction: column;
     top: 0;
@@ -85,5 +93,10 @@ const Emoji = styled.div`
   font-size: 4em;
   margin: 40px 0;
 `;
+const Container = styled.div`
+  padding: 0rem 1.0875rem 4.7rem;
+  max-width: 960px;
+  margin: 25px auto;
+`
 
-export { FeaturedPost, FeaturedTitle, OldTitle, Tease, Date, Month, Year, Details, PostTags, BTF, Excerpt, TagTitle, SearchInput, NoPosts, Emoji};
+export { FeaturedPost, FeaturedTitle, OldTitle, Tease, Date, Month, Year, Details, PostTags, BTF, Excerpt, TagTitle, SearchInput, NoPosts, Emoji, Container};

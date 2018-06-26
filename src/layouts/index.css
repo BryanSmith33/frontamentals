@@ -702,3 +702,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
+ .gatsby-image-outer-wrapper {
+  padding: 10px;
+ }

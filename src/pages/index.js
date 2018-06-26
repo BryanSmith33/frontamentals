@@ -13,6 +13,13 @@ const HeroImg = styled(Img)`
     width: 100%;
   }
 `;
+const HeroDesc = styled.div`
+  @media(max-width: 1000px){
+    padding: 0 1.0875rem;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+`
 
 const IndexPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
@@ -26,11 +33,11 @@ const IndexPage = ({ data }) => {
               <Link to={frontmatter.path}>
                 <Tease featured={true}>
                   <HeroImg sizes={frontmatter.image.childImageSharp.sizes} alt={frontmatter.title} />
-                  <div>
+                  <HeroDesc>
                     <FeaturedTitle>{frontmatter.title}</FeaturedTitle>
                     <Excerpt className='no-margin'>{post.excerpt}</Excerpt>
                     <PostTags>{frontmatter.tags.join(', ')}</PostTags>
-                  </div>
+                  </HeroDesc>
                 </Tease>
               </Link>
             </FeaturedPost>

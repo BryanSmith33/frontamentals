@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import { Date, Month, Year, Details, PostTags, OldTitle, Tease, SearchInput, Emoji, NoPosts } from '../components/UIComponents';
+import { Date, Month, Year, Details, PostTags, OldTitle, Tease, SearchInput, Emoji, NoPosts, Container } from '../components/UIComponents';
 
 class Search extends React.Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
+      <Container>
         <SearchInput className='search'
           aria-label='Search by title or tags'
           innerRef={input => this.input = input}
@@ -42,7 +42,7 @@ class Search extends React.Component {
                   <div>{frontmatter.day}</div>
                   <Year>{frontmatter.year}</Year>
                 </Date>
-                <div >
+                <div>
                   <Details>
                     <OldTitle>{frontmatter.title}</OldTitle>
                     <PostTags>{frontmatter.tags.join(', ')}</PostTags>
@@ -59,7 +59,7 @@ class Search extends React.Component {
             <h1>We searched high and low but we couldn't find any posts that matched <span className='pink'>{this.input.value}...</span></h1>
           </NoPosts>
       }
-      </div>
+      </Container>
     )
   }
 }

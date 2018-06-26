@@ -5,6 +5,8 @@ import Bio from '../components/Bio/Bio';
 import Social from '../components/Social/Social';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
+import background from '../images/trianglify.svg'
+import { Container } from '../components/UIComponents'
 import './prism.css';
 
 const PostTitle = styled.h1`
@@ -13,6 +15,7 @@ const PostTitle = styled.h1`
 `;
 const PostDate = styled.h4`
   font-weight: 200;
+  text-align: center;
 `;
 const PostTags = styled.div`
   color: #BCBCBC;
@@ -22,8 +25,14 @@ const BackToHome = styled.div`
   margin: 15px 0;
 `;
 const StyledImage = styled(Img)`
- margin-bottom: 26px;
+  max-width: 650px;
+  margin: 2em auto;
 `;
+const PostImageContainer = styled.div`
+  background: url(${background});
+  width: 100%;
+`
+console.log(background);
 const Template = ({ data, location }) => {
   const { markdownRemark: post } = data;
   const { frontmatter, html } = post;
@@ -47,14 +56,18 @@ const Template = ({ data, location }) => {
       <div>
         <PostTitle>{title}</PostTitle>
         <PostDate>{date}</PostDate>
-        <StyledImage className='test' sizes={image.childImageSharp.sizes} alt={title}/>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-        <PostTags>{postTags.join(', ')}</PostTags>
-        <Social data={frontmatter} />
-        <Link to='/'>
-          <BackToHome>{`< Back To Posts`}</BackToHome>
-        </Link>
-        <Bio />
+        <PostImageContainer>
+          <StyledImage sizes={image.childImageSharp.sizes} alt={title} />
+        </PostImageContainer>
+        <Container>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+          <PostTags>{postTags.join(', ')}</PostTags>
+          <Social data={frontmatter} />
+          <Link to='/'>
+            <BackToHome>{`< Back To Posts`}</BackToHome>
+          </Link>
+          <Bio />
+        </Container>
       </div>
     </div>
   )

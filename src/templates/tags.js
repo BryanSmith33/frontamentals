@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import {TagTitle, Date, Month, Year, Details, PostTags, OldTitle, Tease} from '../components/UIComponents';
+import {TagTitle, Date, Month, Year, Details, PostTags, OldTitle, Tease, Container} from '../components/UIComponents';
 
 const Tags = ({ pathContext }) => {
   const { posts, tagName } = pathContext;
   if (posts) {
     return (
-      <div>
+      <Container>
         <span>
           <TagTitle>Posts about <span className='pink caps'>{tagName}</span>:</TagTitle>
         </span>
@@ -31,7 +31,7 @@ const Tags = ({ pathContext }) => {
             )
           })}
 
-      </div>
+      </Container>
     )
   }
 }
